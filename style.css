@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.container{width: 80%;margin: 0 auto;}
+/*********************************************** Header 헤더 ***********************************************/
+header{border-bottom: 1px solid #000;}
+header .logo_area{text-align: center;}
+header .logo_area a{background: url("https://www.placehold.it/200x50") no-repeat;display: block;width: 200px;height: 50px;margin: 0 auto;}
+header nav{width: 100%;}
+header nav::after{content: '';display: block;clear: both;}
+header nav .nav_common{width: 33.33%;float: left;}
+header nav .nav_center{margin-left: 33.33%;text-align: center;}
+header nav .nav_right{text-align: right;}
+header nav .link_list{display: inline-block;}
+header nav .link_list::after{content: '';display: block;clear: both;}
+header nav .link_list li{float: left;}
+header nav .link_list li:not(:last-child){margin-right: 1em;}
+header nav .link_list li a{font-size: 1rem;}
+/*********************************************** //Header 헤더 ***********************************************/
+
+/*********************************************** Media Query 미디어 쿼리 ***********************************************/
+/************************************************ Tablet 태블릿(1024px) ************************************************/
+@media (max-width:1024px){
+    header .logo_area{float: left; width: 33.33%;}
+    header .logo_area a{margin-left: 0;}
+    header nav .nav_common{margin-bottom:-5px}
+    header nav .nav_center{margin-left: 0;}
+    header nav .link_list li a{line-height: 50px;}
+}
+/*********************************************** //Tablet 태블릿(1024px) ***********************************************/
+
+/************************************************ 모바일(375px) ************************************************/
+/* @media screen and (max-width:375px){
+    
+} */
+/************************************************ //모바일(375px) ************************************************/
