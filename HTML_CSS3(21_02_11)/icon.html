@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 1rem;
+        }
+
+        .trapezoid1 {
+            width: 100px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 40px solid #f55;
+        }
+
+        .trapezoid2 {
+            width: 100px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 40px solid #f55;
+        }
+
+        .trapezoid3 {
+            height: 60px;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 40px solid #f55;
+        }
+
+        .trapezoid4 {
+            height: 60px;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-right: 40px solid #f55;
+        }
+
+        .tiangle1 {
+            border-right: 20px solid transparent;
+            border-top: 20px solid #f55;
+        }
+
+        .tiangle2 {
+            border-left: 20px solid transparent;
+            border-top: 20px solid #f55;
+        }
+
+        .facebook {
+            display: block;
+        }
+
+        .facebook i {
+            position: relative;
+            display: block;
+            color: white;
+            background: blue;
+            /* text-indent: -9999px; */
+            width: 100px;
+            height: 100px;
+        }
+
+        .facebook i::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            width: 50px;
+            height: 100px;
+            border: 15px solid #000;
+            border-radius: 20px;
+            border-top-left-radius: 20px 10px;
+        }
+
+        .facebook i::after {}
+    </style>
+</head>
+
+<body>
+    <div class="trapezoid1"></div>
+    <div class="trapezoid2"></div>
+    <div class="trapezoid3"></div>
+    <div class="trapezoid4"></div>
+    <div class="tiangle1"></div>
+    <div class="tiangle2"></div>
+    <div class="tiangle3"></div>
+    <div class="tiangle4"></div>
+    <span class="facebook"><i></i></span>
+</body>
+
+</html>
